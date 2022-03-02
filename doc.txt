@@ -1,0 +1,69 @@
+welcome to doc.txt. here ill show all of the commands used in scamgame
+
+1. CHOICE
+CHOICE is one of the most important commands in this whole game. it creates a choice. i.e. do you want to delete this? [y/n]?
+its usage is very simple
+
+CHOICE [/C choices] [/N] [/CS] [/T timeout /D choice] [/M text]
+
+parameter list:
+   /C    choices       Specifies the list of choices to be created.
+                       Default list is "YN".
+
+   /N                  Hides the list of choices in the prompt.
+                       The message before the prompt is displayed
+                       and the choices are still enabled.
+
+   /CS                 Enables case-sensitive choices to be selected.
+                       By default, the utility is case-insensitive.
+
+   /T    timeout       The number of seconds to pause before a default
+                       choice is made. Acceptable values are from 0 to
+                       9999. If 0 is specified, there will be no pause
+                       and the default choice is selected.
+
+   /D    choice        Specifies the default choice after nnnn seconds.
+                       Character must be in the set of choices specified
+                       by /C option and must also specify nnnn with /T.
+
+   /M    text          Specifies the message to be displayed before
+                       the prompt. If not specified, the utility
+                       displays only a prompt.
+
+
+Examples:
+   CHOICE /?
+   CHOICE /C YNC /M "Press Y for Yes, N for No or C for Cancel."
+   CHOICE /T 10 /C ync /CS /D y
+   CHOICE /C ab /M "Select a for option 1 and b for option 2."
+   CHOICE /C ab /N /M "Select a for option 1 and b for option 2."
+
+2. GOTO
+if you snoop at my src, you might see goto. it's basically "if this, then go to that" etc.
+
+GOTO label
+
+  label   Specifies a text string used in the batch program as a label.
+
+You type a label on a line by itself, beginning with a colon.
+
+For example:
+
+goto test
+:test
+
+3. echo
+echo is the most easiest command. it prints text on the cmd window.
+NOTE: @echo off is used for disabling input, this is an example:
+
+NO @ECHO OFF
+C:\Users\Maksy\Desktop>echo hello
+hello
+
+WITH @ECHO OFF
+
+hello
+
+Notice there's no command executing it.
+
+i will end the doc file here because 69th line of code
