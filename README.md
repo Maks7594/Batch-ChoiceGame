@@ -14,10 +14,19 @@ My friend got hacked, and he sent a message to test "his" new "game" and ofc i d
 # Q&A
 
 Q: Can i create my own endings in another repository?
+
 A: Fork the repository, then feel free to add new endings.
 
+
+
+
 Q: How can I learn the CHOICE commmand?
+
 A: https://www.computerhope.com/issues/ch001674.htm
 
+
+
+
 Q: Can I remake the game in another programming language?
+
 A: Yes, you can. Just mention me in the about section or something.
